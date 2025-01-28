@@ -33,12 +33,12 @@ def get_cart(username: str) -> list:
         return []
     
     cart = cursor.fetchall()
-    temp_cart = []
-    for row in cart:
-        temp_cart.append(row)
+#    temp_cart = []
+#    for row in cart:
+#        temp_cart.append(row)
     
     final_cart = []
-    for item in temp_cart:
+    for item in cart:
         final_cart.append(item)
     
     cursor.close()
